@@ -1,0 +1,98 @@
+.navbar-brand,
+.nav-link {
+  color: white;
+}
+
+.navbar-toggler {
+  background: white;
+}
+
+.navbar,
+.navbar-collapse {
+  background: darkcyan;
+}
+
+/* hero background image */
+.bgimage {
+  height: 100vh;
+  background: darkcyan;
+  background-size: cover;
+  position: relative;
+}
+/* text css above hero image*/
+.hero_title {
+  font-size: 4.5rem;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.text {
+  position: relative;
+  color: black;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.text.first-text {
+  color: #fff;
+}
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: darkcyan;
+  border-left: 2px solid black;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero_title {
+    font-size: 1.35rem;
+  }
+  .text,
+  .text.first-text,
+  .text.sec-text:before {
+    font-size: 1rem;
+  }
+
+  #margin {
+    margin-top: 30px;
+  }
+}
+
+/* about section image css */
+.imageAboutPage {
+  width: 100%;
+}
+
+form {
+  margin-top: 50px;
+}
+
+footer {
+  padding: 14px;
+  color: white;
+}
+
+.bg-darkcyan {
+  background-color: #008b8b;
+}
